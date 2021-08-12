@@ -18,6 +18,9 @@ VSソリューションエクスプローラ、プロパティから、<br>
 C++->全般->追加のインクルードに～～～～build\install\includeまでのパスを<br>
 リンカ―->全般->追加のライブラリに～～～～build\install\x64\vc16\binまでのパスと～～～～build\install\x64\vc16\lib<br>
 リンカ―->入力->追加の依存ファイルにopencv_world<version>d.libを追加 ex.opencv_world440d.lib<br>
+ ```
+ 他にも環境変数をいじったり、思いプロパティファイル？をいれとくなどあるそうですが、↑が一番いいです。もっといいのは↓です。
+```
 これを毎回するのがめんどくさいと思った人は、[VSのデフォを変える](https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11111008231)という方法があります。<br>
 
  ## C#
