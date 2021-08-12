@@ -33,6 +33,7 @@ C++->全般->追加のインクルードに～build\install\includeまでのパ�
  ## Python
  プレゼントマークから管理<br>
  opencv-pythonをインストール<br>
+ 立ち上げなおす
  ```
  あー簡単。すごい簡単。
 ```
