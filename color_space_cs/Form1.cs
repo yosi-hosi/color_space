@@ -52,7 +52,7 @@ namespace color_space_cs
 //初めてのものはnewしないといけない cf.ガーベッジコレクション
 //Mat image=new Mat();
 //VideoCapture video=new VideoCapture();
-//new Size
+//new Size(
 //work OpenCVのImShowじゃなくてwinFormに描画してみる
 //work ツールボックスいろいろ遊ぶ
 //次回　山中の汚いコード(引き継げるものはこれだけ)見る
