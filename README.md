@@ -30,7 +30,7 @@ C++->全般->追加のインクルードに～build\install\includeまでのパ�
 ```
  あー簡単。
 ```
- # Python
+ ## Python
  プレゼントマークから管理<br>
  opencv-pythonをインストール<br>
  ```
