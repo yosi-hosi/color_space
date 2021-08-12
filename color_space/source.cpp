@@ -8,7 +8,7 @@ int counter = 0;
 void on_trackbar(int, void*)
 {//This function gets called whenever a
  // trackbar position is changed
-	cout << "trackbar has moved!" <<counter<< endl;
+	cout << "trackbar has moved! " <<counter<< endl;
 	counter++;
 }
 
