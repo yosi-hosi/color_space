@@ -41,6 +41,7 @@ namespace color_space_cs
 				imshow("binary", binary);
 				if (waitKey(1) == 'q') break;
 			}
+			destroyAllWindows();
 			return 0;
 		}
     }

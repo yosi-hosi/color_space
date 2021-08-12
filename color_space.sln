@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "color_space", "color_space\color_space.vcxproj", "{EF35B129-21EC-4535-8AA7-F5C35A499248}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "color_space_cs", "color_space_cs\color_space_cs.csproj", "{91E113A9-7626-45BE-8F2A-DE4FCD1DE0B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "color_space_cs", "color_space_cs\color_space_cs.csproj", "{91E113A9-7626-45BE-8F2A-DE4FCD1DE0B8}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "color_space_py", "color_space_py\color_space_py.pyproj", "{38A9C262-DCEB-4F05-9F4C-0422D85D31E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,12 @@ Global
 		{91E113A9-7626-45BE-8F2A-DE4FCD1DE0B8}.Release|x64.Build.0 = Release|Any CPU
 		{91E113A9-7626-45BE-8F2A-DE4FCD1DE0B8}.Release|x86.ActiveCfg = Release|Any CPU
 		{91E113A9-7626-45BE-8F2A-DE4FCD1DE0B8}.Release|x86.Build.0 = Release|Any CPU
+		{38A9C262-DCEB-4F05-9F4C-0422D85D31E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38A9C262-DCEB-4F05-9F4C-0422D85D31E1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{38A9C262-DCEB-4F05-9F4C-0422D85D31E1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{38A9C262-DCEB-4F05-9F4C-0422D85D31E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38A9C262-DCEB-4F05-9F4C-0422D85D31E1}.Release|x64.ActiveCfg = Release|Any CPU
+		{38A9C262-DCEB-4F05-9F4C-0422D85D31E1}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

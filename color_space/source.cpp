@@ -48,6 +48,7 @@ int main(void)
 		imshow("binary", binary);
 		if (waitKey(1) == 'q') break;
 	}
+	destroyAllWindows();
 	return 0;
 }
 
