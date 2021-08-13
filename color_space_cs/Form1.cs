@@ -36,7 +36,7 @@ namespace color_space_cs
 			{
 				video >> image;
 				if (image.empty() == true) break;
-				resize(image, image, Size(image.cols / 2, image.rows / 2));
+				resize(image, image, Size(image.cols / 3, image.rows / 3));
 
 				imshow("binary", binary);
 				if (waitKey(1) == 'q') break;
