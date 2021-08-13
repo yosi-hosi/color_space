@@ -65,3 +65,5 @@ int main(void)
 
 //today's point
 //‘‚­ƒoƒO‚ğæ‚ê‚é‚±‚Æ‚ªˆê”Ô‘å–B
+
+//pull request
