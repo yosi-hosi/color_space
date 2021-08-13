@@ -40,7 +40,7 @@ int main(void)
 	while (1) {
 		video >> image;
 		if (image.empty() == true) break;
-		resize(image, image, Size(image.cols / 3, image.rows / 3));
+		resize(image, image, Size(image.cols / 2, image.rows / 2));
 		cvtColor(image, HSV, COLOR_BGR2HSV);
 		inRange(HSV, Scalar(H_MIN, S_MIN, V_MIN), Scalar(H_MAX, S_MAX, V_MAX), binary);
 		//imshow("image", image);
