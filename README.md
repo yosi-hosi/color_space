@@ -50,5 +50,8 @@ C++->全般->追加のインクルードに～build\install\includeまでのパ�
 恥ずかしいのでVebots限定です。
  
  # Githubの勉強
- *readme
- *cloneとfork
+ * readme
+ * cloneとfork
+ 僕の理解
+ ![clone_fork](https://user-images.githubusercontent.com/63694987/129294615-8a03e09a-6c27-4dff-b676-3f214432e9de.png)<br>
+ だから、forkして、developを[name/purpose]とかでbranchして適宜push必要ならpull request、承認後mergeと思われる。
