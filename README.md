@@ -48,3 +48,7 @@ C++->全般->追加のインクルードに～build\install\includeまでのパ�
  
 # License
 恥ずかしいのでVebots限定です。
+ 
+ # Githubの勉強
+ *readme
+ *cloneとfork
