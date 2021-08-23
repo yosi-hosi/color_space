@@ -1,12 +1,5 @@
 ﻿using OpenCvSharp;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace color_space_cs
@@ -20,29 +13,32 @@ namespace color_space_cs
 
 		private void button1_Click(object sender, EventArgs e)
         {
-			string filepath = "//ares//Temporary//EV//tsurunuma//2020//20201005tsurunuma//Sony camera//MAH00023.avi";
+			string filepath = "//ares//Temporary//EV//tsurunuma//2020//20201005tsurunuma//Sony camera//MAH00023.mp4";
 			//string filepath = "MAH00023.avi";
-			VideoCapture video;
-			video.open(filepath);
-			if (video.isOpened() == false)
+			var video =new VideoCapture();
+			video = VideoCapture.FromFile(filepath);
+			if (video.IsOpened() == false)
 			{
 				//cout << "Could not open the file...." << endl;
-				return 0;
+				return ;
 			}
 
-			Mat image, HSV, binary;
-			namedWindow("image");
-			while (1)
+			var image = new Mat();
+			var Blur = new Mat();
+			//Cv2.NamedWindow("image");
+			while (video.Read(image))
 			{
-				video >> image;
-				if (image.empty() == true) break;
-				resize(image, image, Size(image.cols / 3, image.rows / 3));
+				if (image.Empty() == true) break;
+				Cv2.Resize(image, image,new OpenCvSharp.Size(image.Cols / 3, image.Rows / 3));
 
-				imshow("binary", binary);
-				if (waitKey(1) == 'q') break;
+				Cv2.GaussianBlur(image, Blur, new Size(trackBar1.Value*2+1, trackBar1.Value*2+1), trackBar2.Value, trackBar3.Value);
+
+				Cv2.ImShow("image", image);
+				Cv2.ImShow("Blur", Blur);
+				if (Cv2.WaitKey(1) == 'q') break;
 			}
-			destroyAllWindows();
-			return 0;
+			Cv2.DestroyAllWindows();
+			return ;
 		}
     }
 }
