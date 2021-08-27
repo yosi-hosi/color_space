@@ -43,8 +43,8 @@ int main(void)
 		resize(image, image, Size(image.cols / 2, image.rows / 2));
 		cvtColor(image, HSV, COLOR_BGR2HSV);
 		inRange(HSV, Scalar(H_MIN, S_MIN, V_MIN), Scalar(H_MAX, S_MAX, V_MAX), binary);
-		//imshow("image", image);
-		//imshow("HSV", HSV);
+		imshow("image", image);
+		imshow("HSV", HSV);
 		imshow("binary", binary);
 		if (waitKey(1) == 'q') break;
 	}
